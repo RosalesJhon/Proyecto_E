@@ -63,7 +63,7 @@ h6 span {
 	padding: 0;
 	margin: 10px auto;
 	cursor: pointer;
-	background-color: #ffffff;
+	background: white;
 }
 
 .checkbox:checked+label:before,
@@ -116,10 +116,17 @@ h6 span {
 	width: 100%;
 	height: 100%;
 	background-color: #2b2e38;
-	background-image: url('/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png');
 	position: absolute;
 	border-radius: 6px;
 	-webkit-transform-style: preserve-3d;
+}
+
+@media (max-width: 420px) {
+
+	.card-front,
+	.card-back {
+		background-color: #6a6c72;
+	}
 }
 
 .card-back {
@@ -234,6 +241,29 @@ body:before {
 	place-items: center;
 	-webkit-mask: url(../img/bg-circuito.svg);
 	mask: url(../img/bg-circuito.svg);
+}
+
+@media (max-width: 420px) {
+	body:before,
+.login__circuit {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 400px;
+	height: 600px;
+}
+	body:before {
+		background: url(../img/CirMob.svg);
+	}
+
+	.login__circuit {
+		-webkit-mask: url(../img/CirMob.svg);
+		mask: url(../img/CirMob.svg);
+	}
 }
 
 .login__circuit:before {

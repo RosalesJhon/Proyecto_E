@@ -12,21 +12,23 @@
 <body>
     <div class="form-container">
         <div class="logo-container">
-            Forgot Password
+            Restablecer Contraseña
         </div>
 
         <form class="form">
             <div class="form-group">
+                <form action="php/Verificacion.php" method="post">
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email" required="">
+                <input type="text" id="email" name="email" placeholder="Ingresa su email" required="">
             </div>
 
-            <button class="form-submit-btn" type="submit">Send Email</button>
+            <button class="form-submit-btn" type="submit">Enviar</button>
         </form>
 
         <p class="signup-link">
-            Don't have an account?
-            <a href="#" class="signup-link link"> Sign up now</a>
+            No tienes una cuenta?
+            <a href="Login.html" class="signup-link link"> Regístrate ahora</a>
+        </form>
         </p>
     </div>
 </body>

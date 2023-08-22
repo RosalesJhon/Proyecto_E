@@ -17,14 +17,13 @@ body::-webkit-scrollbar-thumb {
 
 .cabeza {
     width: 100%;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     height: 12vh;
     position: fixed;
     z-index: 1000;
 }
-
 header {
     width: 20%;
     float: left;
@@ -35,7 +34,17 @@ header img {
     display: block;
     margin: 0 auto;
 }
-
+@media (max-width: 420px) {
+    .cabeza{
+        height: 10vh;
+    }
+    header{
+        width: 100%;
+    }
+    header img{
+        width: 15%;
+    }
+}
 header h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-variant: small-caps;
@@ -77,8 +86,15 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
 }
-
+@media (max-width: 420px) {
+    nav{
+        width: 100%;
+        border-bottom: 1px solid;
+        height: 7vh;
+    }
+}
 nav ul li {
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
@@ -163,4 +179,66 @@ nav ul li.active .fa-magnifying-glass {
 
 .next-btn {
     right: 20px;
+}
+@media (max-width: 420px) {
+    .slide img{
+        height: 50vh;
+    }
+    .prev-btn,.next-btn{
+        top: 65%;
+    }
+    .prev-btn{
+        left: 10px;
+    }
+    .next-btn{
+        right: 10px;
+    }
+}
+.btn-whatsapp {
+	position: fixed;
+	z-index: 999;
+	bottom: 20px;
+	right: 20px;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #00e676;
+	opacity: 0;
+	animation: pup 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+	animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+	animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+	position: relative;
+	z-index: 2;
+}
+
+@keyframes pup {
+	0% {
+		transform: scale(1);
+	}
+
+	15%{
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(2.5);
+	}
 }
