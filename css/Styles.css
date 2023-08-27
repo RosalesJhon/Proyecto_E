@@ -1,139 +1,4 @@
-:root {
-    --b: #000;
-    --w: #fff;
-    --y: rgb(255, 239, 8);
-
-}
-
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body::-webkit-scrollbar {
-    width: 0;
-}
-
-.cabeza {
-    width: 100%;
-    height: auto;
-    background: var(--b);
-    text-align: center;
-    position: fixed;
-    z-index: 1000;
-}
-
-.cabeza .fa-screwdriver-wrench {
-    font-size: 50px;
-    margin-top: 10px;
-    margin-left: 50px;
-    color: var(--y);
-}
-
-@media (max-width:420px) {
-    .cabeza .fa-screwdriver-wrench {
-        font-size: 35px;
-    }
-}
-
-header h1 {
-    color: var(--y);
-    font-size: 50px;
-    margin-top: 0;
-}
-
-@media (max-width:420px) {
-    header h1 {
-        font-size: 30px
-    }
-}
-
-header h1 span {
-    font-size: 30px;
-    display: inline-block;
-    transform: rotate(-90deg);
-    transform-origin: top;
-    margin: 0 1%;
-}
-
-@media (max-width:420px) {
-    header h1 span {
-        font-size: 20px;
-        margin: 0 2%;
-    }
-}
-
-nav {
-    width: 100%;
-    color: var(--w);
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
-    margin-bottom: 0;
-}
-
-@media (max-width:420px) {
-    nav ul {
-        padding: 0;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
-
-nav ul li {
-    font-weight: 700;
-    cursor: pointer;
-}
-
-nav ul li:hover,
-nav ul li.active {
-    color: var(--y);
-}
-
-.fa-house,
-.fa-computer,
-.fa-wrench,
-.fa-id-card-clip,
-.fa-circle-info,
-.fa-magnifying-glass {
-    font-size: 20px;
-    color: var(--w);
-}
-
-@media (max-width:420px) {
-    p {
-        display: none;
-    }
-
-    .fa-house,
-    .fa-computer,
-    .fa-wrench,
-    .fa-id-card-clip,
-    .fa-circle-info,
-    .fa-magnifying-glass {
-        font-size: 20px;
-        color: var(--w);
-    }
-}
-
-.fa-house:hover,
-.fa-computer:hover,
-.fa-wrench:hover,
-.fa-id-card-clip:hover,
-.fa-circle-info:hover,
-.fa-magnifying-glass:hover,
-nav ul li.active .fa-house,
-nav ul li.active .fa-computer,
-nav ul li.active .fa-wrench,
-nav ul li.active .fa-id-card-clip,
-nav ul li.active .fa-circle-info,
-nav ul li.active .fa-magnifying-glass {
-    color: var(--y) !important;
-}
+@import url(World.css);
 
 .slider {
     width: 100%;
@@ -313,25 +178,29 @@ main .card:hover {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
-.conten-map{
+
+.conten-map {
     width: 100%;
     height: auto;
     background: red;
 }
-.mapa{
+
+.mapa {
     margin: 0 5%;
     float: left;
 }
-.info{
+
+.info {
     width: 40%;
     height: auto;
     float: left;
 }
-.info h1{
+
+.info h1 {
     text-align: center;
 }
 
-.ft{
+.ft {
     float: left;
     background: rgba(191, 186, 186, 0.183);
     width: 100%;
@@ -339,37 +208,46 @@ main .card:hover {
     height: 10vh;
     margin: 2% auto 0 0;
 }
-.ft p{
+
+.ft p {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 2% 0;
     font-weight: 600;
-}.fa-facebook,.fa-twitter{
+}
+
+.fa-facebook,
+.fa-twitter {
     font-size: 25px;
     margin: 0 20% 10px 20px;
 }
-@media (max-width: 420px){
-    .mapa{
+
+@media (max-width: 420px) {
+    .mapa {
         width: 100%;
         margin: 1% auto;
     }
-    .frame{
+
+    .frame {
         width: 100%;
         height: 40vh;
         margin: 0 auto;
     }
-    .info{
+
+    .info {
         width: 100%;
         text-align: center;
     }
-    .ft{
+
+    .ft {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .ft p{
+
+    .ft p {
         width: 100%;
         font-weight: 600;
     }
