@@ -221,6 +221,7 @@ main .card:hover {
 .fa-facebook,
 .fa-twitter {
     font-size: 25px;
+    color: black;
     margin: 0 20% 10px 20px;
 }
 
