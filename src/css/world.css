@@ -1,0 +1,145 @@
+:root {
+    --b: #000;
+    --w: #fff;
+    --y: rgb(255, 239, 8);
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.contenedor-cabeza {
+    width: 100%;
+    height: 28vh;
+    top: 0;
+    background: var(--b);
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+}
+@media (max-width:420px) {
+    .contenedor-cabeza{
+        height: auto;
+    }
+}
+.contenedor-cabeza .fa-screwdriver-wrench {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: var(--y);
+}
+
+@media (max-width:420px) {
+    .cabeza .fa-screwdriver-wrench {
+        font-size: 35px;
+    }
+}
+
+header h1 {
+    color: var(--y);
+    font-size: 50px;
+    margin-top: 0;
+}
+
+@media (max-width:420px) {
+    header h1 {
+        font-size: 30px
+    }
+}
+
+header h1 span {
+    font-size: 30px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    margin: 0 1%;
+}
+
+@media (max-width:420px) {
+    header h1 span {
+        font-size: 20px;
+        margin: 0 2%;
+    }
+}
+
+nav {
+    width: 100%;
+    color: var(--w);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+    nav ul {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+nav ul li {
+    font-weight: 700;
+    cursor: pointer;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--y);
+}
+.fa-house,
+.fa-computer,
+.fa-wrench,
+.fa-id-card-clip,
+.fa-circle-info,
+.fa-magnifying-glass {
+    font-size: 20px;
+    color: var(--w);
+}
+
+@media (max-width:420px) {
+    p {
+        display: none;
+    }
+
+    .fa-house,
+    .fa-computer,
+    .fa-wrench,
+    .fa-id-card-clip,
+    .fa-circle-info,
+    .fa-magnifying-glass {
+        font-size: 20px;
+        color: var(--w);
+    }
+}
+
+.fa-house:hover,
+.fa-computer:hover,
+.fa-wrench:hover,
+.fa-id-card-clip:hover,
+.fa-circle-info:hover,
+.fa-magnifying-glass:hover,
+nav ul li.active .fa-house,
+nav ul li.active .fa-computer,
+nav ul li.active .fa-wrench,
+nav ul li.active .fa-id-card-clip,
+nav ul li.active .fa-circle-info,
+nav ul li.active .fa-magnifying-glass {
+    color: var(--y) !important;
+}

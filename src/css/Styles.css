@@ -1,0 +1,269 @@
+@import url(World.css);
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: -3px auto;
+}
+.slide {
+    width: 100%;
+    display: none;
+}
+.slide img {
+    width: 100%;
+    height: 70vh;
+    cursor: pointer;
+    display: block;
+    margin: 14.5% auto;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+@media (max-width:420px) {
+    .slider img {
+        height: 40vh;
+        margin: 32% auto;
+    }
+}
+.slide.active {
+    display: block;
+}
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--w);
+    cursor: pointer;
+    z-index: 1;
+}
+@media (max-width: 420px) {
+    .prev-btn,
+    .next-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: var(--w);
+        cursor: pointer;
+        z-index: 1;
+    }
+}
+.prev-btn {
+    left: 20px;
+}
+.next-btn {
+    right: 20px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+main h1{
+    text-align: center;
+    margin: 30px auto;
+    color: var(--b);
+    font-size: 30px;
+}
+@media (max-width:420px) {
+    main{
+        margin: -16vh 0;
+    }
+    main h1{
+        font-size: 25px;
+    }
+}
+main .servicios{
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    gap: 5px;
+    display: flex;
+}
+@media (max-width:420px) {
+    main .servicios{
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+    }
+}
+.servicios .card{
+    width: 70%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.12);
+    height: auto;
+    margin: 15px;
+}
+@media (max-width:420px) {
+    .servicios .card{
+        width: 90%;
+        margin: 1rem auto;
+        height: auto;
+    }
+    .card p{
+        display: block;
+    }
+}
+.servicios .card:hover{
+    border-radius: 10% 10%;
+}
+.card h3{
+    text-align: center;
+    height: 20px;
+}
+.card .fa-desktop,.card .fa-screwdriver,.card .fa-newspaper, .card .fa-credit-card{
+    text-align: center;
+    font-size: 30px;
+    width: 60px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--y);
+}
+.card p{
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 20px;
+}
+.card button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10%;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contenedor-mapa{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    display: flex;
+}
+.mapa{
+    margin: 0 25px;
+    width: 50%;
+}
+@media (max-width:420px) {
+    .contenedor-mapa{
+        width: 100%;
+        gap: 0;
+        flex-direction: column;
+    }
+    .mapa{
+        width: 100%;
+        margin: 0;
+    }
+}
+.info{
+    margin: 0 20px;
+}
+.info .fa-location-dot{
+    font-size: 35px;
+    animation: mov 2s infinite;
+    color: red;
+}
+@media (max-width:420px) {
+    .info{
+        width: 100%;
+        text-align: center;
+        margin: 2vh auto;
+    }
+}
+@keyframes mov{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.formulario{
+    width: 95%;
+    height: 50vh;
+    margin: 10vh auto;
+    border-radius: 10px;
+}
+.formulario form {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 20px 1px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    height: auto;
+}
+@media (max-width:420px) {
+    .formulario{
+        width: 100%;
+
+    }
+    .formulario form{
+        width: 80%;
+    }
+}
+.formulario form:hover{
+    border-radius: 200px 10px;
+}
+form label{
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+
+}
+form input{
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 5px;
+}
+@media (max-width:420px) {
+    form label{
+        width: 90%;
+    }
+    form input{
+        width: 90%;
+    }
+}
+form button{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: blue;
+    color: var(--w);
+}
+@media (max-width:420px) {
+    form button{
+        width: 70%;
+    }
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: rgb(218, 218, 222);
+    text-align: center;
+}
+footer p{
+    padding: 20px;
+}
+@media (max-width:420px) {
+    footer p{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
