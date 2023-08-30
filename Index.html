@@ -110,16 +110,20 @@
             </div>
         </div>
         <div class="formulario">
-            <form action="">
+            <form action="" method="post">
                 <h1>Preguntar</h1>
-                <label for="">Nombres</label>
-                <input type="text" name="" id="">
-                <label for="">Telefono</label>
-                <input type="text" name="" id="">
-                <label for="">Pregunta</label>
-                <input type="text" name="" id="">
-                <button type="button">Preguntar</button>
+                <label for="nombres">Nombres:</label>
+                <input type="text" name="nombres" id="nombres" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" id="telefono" required>
+                
+                <label for="pregunta">Pregunta:</label>
+                <input type="text" name="pregunta" id="pregunta" required>
+                
+                <button type="submit">Preguntar</button>
             </form>
+            
         </div>
         <footer>
             <p>&copy; Derechos reservados Dr. Laptop 2023</p>
