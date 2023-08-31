@@ -1,0 +1,130 @@
+#paso1:hover .fa-microchip,
+#paso2:hover .fa-server,
+#paso4:hover .fa-wifi,
+#paso3:hover .fa-charging-station,
+#paso4:hover .fa-windows,
+#paso1:hover .fa-display,
+#paso2:hover .fa-hard-drive,
+#paso3:hover .fa-virus,
+#paso4:hover .fa-tachograph-digital,
+#paso1:hover .fa-power-off {
+    animation: mov 2s ease-in-out;
+}
+
+@keyframes mov {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#paso2:hover .fa-fan,
+#paso1:hover .fa-gear,
+#paso3:hover .fa-rotate-right {
+    animation: gr 2s ease-in-out;
+}
+
+@keyframes gr {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#paso3:hover .fa-broom-ball {
+    animation: barrer 2s linear;
+}
+
+@keyframes barrer {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#paso4:hover .fa-location-crosshairs {
+    animation: apl 2s ease-in-out;
+}
+
+@keyframes apl {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+#paso3:hover .fa-globe {
+    animation: wl 2s ease-in-out;
+}
+
+@keyframes wl {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#paso1:hover .fa-plug-circle-exclamation,
+#paso2:hover .fa-plug-circle-xmark,
+#paso2:hover .fa-trash-can {
+    animation: bounce 2s ease-in-out;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}

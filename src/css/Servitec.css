@@ -1,4 +1,5 @@
 @import url(world.css);
+@import url(animaciones.css);
 
 .main {
     float: left;
@@ -62,7 +63,7 @@
 
 .solu {
     width: 20%;
-    height: 12vh;
+    height: auto;
     display: flex;
     background-color: aliceblue;
     justify-content: center;
@@ -76,7 +77,7 @@
 .fa-power-off,
 .fa-display,
 .fa-slack {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -124,81 +125,16 @@
 }
 
 .pasos i {
-    font-size: 40px;
+    font-size: 30px;
     background: rgba(0, 67, 252, 0.14);
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
 .pasos h3 {
     font-size: 20px;
     font-weight: 100;
-    margin: 50px auto;
-}
-
-#paso1:hover .fa-microchip {
-    animation: mov 2s ease-in-out;
-    cursor: pointer;
-}
-
-@keyframes mov {
-    0% {
-        transform: scale(1.1);
-    }
-
-    50% {
-        transform: scale(0.9);
-    }
-
-    100% {
-        transform: scale(1.1);
-    }
-}
-
-#paso2:hover .fa-fan {
-    animation: gr 2s ease-in-out;
-}
-
-@keyframes gr {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-#paso3:hover .fa-broom-ball {
-    animation: barrer 2s linear;
-}
-
-@keyframes barrer {
-    0%{
-        transform: rotate(-20deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-20deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-#paso4:hover .fa-location-crosshairs{
-    animation: apl 2s ease-in-out;
-}
-
-@keyframes apl {
-    0% {
-        transform: scale(0.9);
-    }50% {
-        transform: scale(1.1);
-    }100%{
-        transform: scale(0.9);
-    }
+    margin: 20px auto;
 }
