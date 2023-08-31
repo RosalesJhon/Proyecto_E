@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="https://kit.fontawesome.com/a22afade38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Productcos.css">
+</head>
+
+<body>
+    
+    <div class="contenedor-cabeza">
+        <header>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h1 class="Logo"><span>Dr.</span>Laptop</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../Index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Inicio</p></a>
+                </li>
+                <li class="active">
+                    <a class="active" href="Productos.html">
+                    <i class="fa-solid fa-computer"></i>
+                    <p>Productos</p></a>
+                </li>
+                <li>
+                    <a  href="ServiTec.html">
+                    <i class="fa-solid fa-wrench"></i>
+                    <p>Servicio Tecnico</p></a>
+                </li>
+                <li>
+                    <a href="Nosotros.html">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                    <p>Nosotros</p></a>
+                </li>
+                <li>
+                    <a href="Busqueda.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Busqueda</p></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <aside>
+            <h1>Categorias</h1>
+            <div class="categorias">
+                <input type="checkbox" name="laptops" id="laptops" checked>
+                <label for="laptops">Laptops</label>
+            </div>
+            <div class="categorias">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Computadoras</label>
+            </div>
+            <div class="categorias">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Accesorios</label>
+            </div>
+            <div class="categorias">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Zona Gamer</label>
+            </div>
+            <h1>Marcas</h1>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos" checked>
+                <label for="laptos">Dell</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Lenovo</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Acer</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Hp</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Toshiba</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Asus</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Samsung</label>
+            </div>
+            <div class="marcas">
+                <input type="checkbox" name="laptos" id="laptos">
+                <label for="laptos">Sony</label>
+            </div>
+        </aside>
+        <div class="contenido">
+            <div class="laptops" draggable="true">
+                <img src="../img/laptop-dell1.avif" alt="">
+                Laptop1
+            </div>
+            <div class="laptops" draggable="true">
+                <img src="../img/dell2.avif" alt="">
+                Laptop2
+            </div>
+            <div class="laptops" draggable="true">
+                <img src="../img/dell3.avif" alt="">
+                Laptop3
+            </div>
+            <div class="laptops" draggable="true">
+                <img src="../img/dell4.avif" alt="">
+                Laptop4
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop5
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop6
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop7
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop8
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop9
+            </div>
+            <div class="laptops" draggable="true">
+                <i class="fa-solid fa-laptop-code"></i>
+                Laptop10
+            </div>
+        </div>
+    </main>
+    <div class="btn-car" id="whatsapp-button" ondrop="handleDrop(event)">
+        <i class="fa-solid fa-cart-arrow-down"></i>
+    </div>
+    <div id="contenedor-arrastre" style="display: none;"></div>
+    <script src="../js/active.js"></script>
+    <script src="../src/js/Drag-Drop.js"></script>
+</body>
+
+</html>

@@ -229,11 +229,19 @@ form input{
     width: 70%;
     border-radius: 5px;
 }
+form textarea{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
 @media (max-width:420px) {
     form label{
         width: 90%;
     }
     form input{
+        width: 90%;
+    }
+    form textarea{
         width: 90%;
     }
 }

@@ -1,0 +1,119 @@
+@import url(world.css);
+
+.btn-car {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-car:before,
+.btn-car:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00000045;
+    opacity: 0;
+    animation: pup 1.7s infinite;
+}
+.btn-car .btn-car:after{
+    pointer-events: auto;
+}
+
+
+@media (max-width:420px) {
+
+    .btn-car:before,
+    .btn-car:after {
+        right: 200px;
+    }
+}
+
+.btn-car:before {
+    animation-delay: 1s;
+}
+
+.btn-car:after {
+    animation-delay: 1.3s;
+}
+
+.btn-car .fa-cart-arrow-down{
+    color: black;
+    font-size: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes pup {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+main{
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 15% auto;
+    display: grid;
+}
+@media (max-width:420px){
+    main{
+        margin: 14vh auto;
+    }
+}
+aside{
+    width: 15%;
+    height: 100vh;
+    float: left;
+    box-shadow: #00000045 1px 1px 30px 0px;
+    margin: -11px 0;
+    position: fixed;
+}
+aside h1{
+    margin: 45px auto;
+}
+aside .categorias,aside .marcas{
+    width: 80%;
+    margin: 1vh auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.contenido {
+    width: 85%;
+    margin: -11px 15% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido .laptops {
+    width: calc(25% - 20px);
+    height: 25vh;
+    margin: 10px;
+    display: flex;
+    background: rgb(233, 230, 230);
+    justify-content: center;
+    align-items: center;
+}
+.laptops .fa-laptop-code{
+    font-size: 100px;
+}
+.laptops img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}

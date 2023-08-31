@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio Tecnico</title>
+    <script src="https://kit.fontawesome.com/a22afade38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/Servitec.css">
+</head>
+
+<body>
+    <div class="contenedor-cabeza">
+        <header>
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h1 class="Logo animate__hinge"><span>Dr.</span>Laptop</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Productos.html">
+                        <i class="fa-solid fa-computer"></i>
+                        <p>Productos</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a class="active" href="ServiTec.html">
+                        <i class="fa-solid fa-wrench"></i>
+                        <p>Servicio Tecnico</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Nosotros.html">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                        <p>Nosotros</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Busqueda.html">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Busqueda</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="estado">
+            <p class="pr"><i class="fa-solid fa-laptop-medical"></i> Revisa tu estado <br></p>
+            <div class="sg">Tu equipo esta en revision ?<br>revisa aqui su estado</div>
+        </div>
+        <h1 class="sp">Soluciones Rapidas</h1>
+        <div class="soluciones">
+            <div class="ops">
+                <div class="solu selected" id="alternarDivs1" data-div-id="contenido1">
+                    <i class="fa-solid fa-temperature-full"></i><br>
+                    Tu equipo se recalienta ?
+                </div>
+                <div class="solu" id="alternarDivs2" data-div-id="contenido2">
+                    <i class="fa-solid fa-wifi"></i><br>
+                    Problemas de conexion ?
+                </div>
+                <div class="solu" id="alternarDivs3" data-div-id="contenido3">
+                    <i class="fa-solid fa-power-off"></i><br>
+                    Tu equipo no enciende ?
+                </div>
+                <div class="solu" id="alternarDivs4" data-div-id="contenido4">
+                    <i class="fa-solid fa-display"></i><br>
+                    Tu equipo es lenta ?
+                </div>
+                <div class="solu" id="alternarDivs5" data-div-id="contenido5">
+                    <i class="fa-brands fa-slack"></i><br>
+                    Mas opciones
+                </div>
+            </div>
+            <!-- primer div -->
+            <div class="contenido" id="contenido1">
+                1
+                <div class="pasos" id="paso1">
+                    <h1>1</h1>
+                    <h2>Uso intensivo de CPU</h2>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Tareas que sobrecargan el procesador generan calor.</h3>
+                </div>
+                <div class="pasos" id="paso2">
+                    <h1>2</h1>
+                    <h2>Falta de ventilación</h2>
+                    <i class="fa-solid fa-fan"></i>
+                    <h3>Bloqueo de flujo de aire en la carcasa.</h3>
+                </div>
+                <div class="pasos" id="paso3">
+                    <h1>3</h1>
+                    <h2>Polvo acumulado</h2>
+                    <i class="fa-solid fa-broom-ball"></i>
+                    <h3>Obstruye los componentes de enfriamiento.</h3>
+                </div>
+                <div class="pasos" id="paso4">
+                    <h1>4</h1>
+                    <h2>Pasta termica</h2>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <h3>Impide una disipación eficiente del calor.</h3>
+                </div>
+            </div>
+            <!-- Segund div -->
+            <div class="contenido" id="contenido2" style="display: none;">
+                2
+                <div class="pasos" id="paso1">
+                    <h1>1</h1>
+                    <h2>Uso intensivo de CPU</h2>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Tareas que sobrecargan el procesador generan calor.</h3>
+                </div>
+                <div class="pasos" id="paso2">
+                    <h1>2</h1>
+                    <h2>Falta de ventilación</h2>
+                    <i class="fa-solid fa-fan"></i>
+                    <h3>Bloqueo de flujo de aire en la carcasa.</h3>
+                </div>
+                <div class="pasos" id="paso3">
+                    <h1>3</h1>
+                    <h2>Polvo acumulado</h2>
+                    <i class="fa-solid fa-broom-ball"></i>
+                    <h3>Obstruye los componentes de enfriamiento.</h3>
+                </div>
+                <div class="pasos" id="paso4">
+                    <h1>4</h1>
+                    <h2>Pasta termica</h2>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <h3>Impide una disipación eficiente del calor.</h3>
+                </div>
+            </div>
+            <!-- tercer div -->
+            <div class="contenido" id="contenido3" style="display: none;">
+                3
+                <div class="pasos" id="paso1">
+                    <h1>1</h1>
+                    <h2>Uso intensivo de CPU</h2>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Tareas que sobrecargan el procesador generan calor.</h3>
+                </div>
+                <div class="pasos" id="paso2">
+                    <h1>2</h1>
+                    <h2>Falta de ventilación</h2>
+                    <i class="fa-solid fa-fan"></i>
+                    <h3>Bloqueo de flujo de aire en la carcasa.</h3>
+                </div>
+                <div class="pasos" id="paso3">
+                    <h1>3</h1>
+                    <h2>Polvo acumulado</h2>
+                    <i class="fa-solid fa-broom-ball"></i>
+                    <h3>Obstruye los componentes de enfriamiento.</h3>
+                </div>
+                <div class="pasos" id="paso4">
+                    <h1>4</h1>
+                    <h2>Pasta termica</h2>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <h3>Impide una disipación eficiente del calor.</h3>
+                </div>
+            </div>
+            <!-- cuarto div -->
+            <div class="contenido" id="contenido4" style="display: none;">
+                4
+                <div class="pasos" id="paso1">
+                    <h1>1</h1>
+                    <h2>Uso intensivo de CPU</h2>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Tareas que sobrecargan el procesador generan calor.</h3>
+                </div>
+                <div class="pasos" id="paso2">
+                    <h1>2</h1>
+                    <h2>Falta de ventilación</h2>
+                    <i class="fa-solid fa-fan"></i>
+                    <h3>Bloqueo de flujo de aire en la carcasa.</h3>
+                </div>
+                <div class="pasos" id="paso3">
+                    <h1>3</h1>
+                    <h2>Polvo acumulado</h2>
+                    <i class="fa-solid fa-broom-ball"></i>
+                    <h3>Obstruye los componentes de enfriamiento.</h3>
+                </div>
+                <div class="pasos" id="paso4">
+                    <h1>4</h1>
+                    <h2>Pasta termica</h2>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <h3>Impide una disipación eficiente del calor.</h3>
+                </div>
+            </div>
+            <!-- quinto div -->
+            <div class="contenido" id="contenido5" style="display: none;">
+                5
+                <div class="pasos" id="paso1">
+                    <h1>1</h1>
+                    <h2>Uso intensivo de CPU</h2>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Tareas que sobrecargan el procesador generan calor.</h3>
+                </div>
+                <div class="pasos" id="paso2">
+                    <h1>2</h1>
+                    <h2>Falta de ventilación</h2>
+                    <i class="fa-solid fa-fan"></i>
+                    <h3>Bloqueo de flujo de aire en la carcasa.</h3>
+                </div>
+                <div class="pasos" id="paso3">
+                    <h1>3</h1>
+                    <h2>Polvo acumulado</h2>
+                    <i class="fa-solid fa-broom-ball"></i>
+                    <h3>Obstruye los componentes de enfriamiento.</h3>
+                </div>
+                <div class="pasos" id="paso4">
+                    <h1>4</h1>
+                    <h2>Pasta termica</h2>
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <h3>Impide una disipación eficiente del calor.</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/active.js"></script>
+    <script src="../js/control.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+@import url(world.css);
+
+.main {
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    margin: 15% auto;
+}
+.estado {
+    height: 15vh;
+    width: 15%;
+    position: fixed;
+    top: 60%;
+    right: 0px;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width=\'229\' height=\'101\' viewBox=\'0 0 229 101\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M229 27.1793C229 23.0375 225.839 19.5806 221.713 19.2112L17.4654 0.922089C6.77647 -0.0350366 -1.80562 9.59472 0.370941 20.1034L15.6832 94.0326C16.5061 98.0055 20.1727 100.733 24.2145 100.38L221.698 83.0937C225.83 82.732 229 79.2721 229 75.1242V27.1793Z\' fill=\'url(%23paint0_linear_1_440)\'/%3E%3Cdefs%3E%3ClinearGradient id=\'paint0_linear_1_440\' x1=\'4.23943\' y1=\'-21.8636\' x2=\'141.077\' y2=\'70.7067\' gradientUnits=\'userSpaceOnUse\'%3E%3Cstop stop-color=\'%23FF8954\'/%3E%3Cstop offset=\'1\' stop-color=\'%23FF560A\'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+    animation: entrada 2s ease-in-out;
+}
+
+@keyframes entrada {
+    0% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.estado .fa-laptop-medical {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.estado .sg {
+    font-size: 14px;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.main .sp {
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+}
+
+.main .soluciones {
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+.ops {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.solu {
+    width: 20%;
+    height: 12vh;
+    display: flex;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding: 10px;
+}
+
+.solu .fa-wifi,
+.fa-temperature-full,
+.fa-power-off,
+.fa-display,
+.fa-slack {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.solu:hover {
+    background: rgba(12, 12, 231, 0.502);
+    color: white;
+}
+
+.solu.selected {
+    background-color: #003cff;
+    color: white;
+}
+
+.soluciones .contenido {
+    width: 80%;
+    height: 40vh;
+    margin: 40px auto;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido .pasos {
+    width: 20%;
+    margin: 1px;
+    border-radius: 10px;
+    background: ghostwhite;
+    border: rgba(0, 0, 255, 0.357) solid .5px;
+    cursor: pointer;
+}
+
+.pasos h1 {
+    background: var(--y);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: -15px;
+    border: rgba(0, 0, 255, 0.357) solid .5px;
+}
+
+.pasos h2 {
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+.pasos i {
+    font-size: 40px;
+    background: rgba(0, 67, 252, 0.14);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.pasos h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 50px auto;
+}
+
+#paso1:hover .fa-microchip {
+    animation: mov 2s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes mov {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+#paso2:hover .fa-fan {
+    animation: gr 2s ease-in-out;
+}
+
+@keyframes gr {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#paso3:hover .fa-broom-ball {
+    animation: barrer 2s linear;
+}
+
+@keyframes barrer {
+    0%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#paso4:hover .fa-location-crosshairs{
+    animation: apl 2s ease-in-out;
+}
+
+@keyframes apl {
+    0% {
+        transform: scale(0.9);
+    }50% {
+        transform: scale(1.1);
+    }100%{
+        transform: scale(0.9);
+    }
+}
