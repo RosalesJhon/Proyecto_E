@@ -18,14 +18,15 @@ laptops.forEach(laptop => {
 
 whatsappButton.addEventListener('click', () => {
     // Mostrar solo los elementos arrastrados en una ventana nueva
-    const elementosArrastrados = contenedorArrastre.innerHTML;
-    if (elementosArrastrados.trim() !== '') {
-        const newWindow = window.open('', '_blank');
-        newWindow.document.write('<h1>Productos en el carrito</h1>');
-        newWindow.document.write(elementosArrastrados);
-    }
+    document.getElementById("mostrarCarrito").addEventListener("click", function () {
+        const elementosArrastrados = document.getElementById("contenedorArrastre").innerHTML;
+        if (elementosArrastrados.trim() !== '') {
+            const newWindow = window.open('carrito.html', '');
+            newWindow.document.write('<h1>Productos en el carrito</h1>');
+            newWindow.document.write(elementosArrastrados);
+        }
+    });
 });
-
 
 whatsappButton.addEventListener('dragover', (e) => {
     e.preventDefault();

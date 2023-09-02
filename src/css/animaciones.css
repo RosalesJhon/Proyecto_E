@@ -128,3 +128,21 @@
         transform: translateY(-5px);
     }
 }
+@keyframes entrada {
+    0% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes entrada2 {
+    0% {
+        transform: translateX(600px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    
     <div class="contenedor-cabeza">
         <header>
             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -20,34 +19,41 @@
             <ul>
                 <li>
                     <a href="../../Index.html">
-                    <i class="fa-solid fa-house"></i>
-                    <p>Inicio</p></a>
+                        <i class="fa-solid fa-house"></i>
+                        <p>Inicio</p>
+                    </a>
                 </li>
                 <li class="active">
                     <a class="active" href="Productos.html">
-                    <i class="fa-solid fa-computer"></i>
-                    <p>Productos</p></a>
+                        <i class="fa-solid fa-computer"></i>
+                        <p>Productos</p>
+                    </a>
                 </li>
                 <li>
-                    <a  href="ServiTec.html">
-                    <i class="fa-solid fa-wrench"></i>
-                    <p>Servicio Tecnico</p></a>
+                    <a href="ServiTec.html">
+                        <i class="fa-solid fa-wrench"></i>
+                        <p>Servicio Tecnico</p>
+                    </a>
                 </li>
                 <li>
                     <a href="Nosotros.html">
-                    <i class="fa-solid fa-id-card-clip"></i>
-                    <p>Nosotros</p></a>
+                        <i class="fa-solid fa-id-card-clip"></i>
+                        <p>Nosotros</p>
+                    </a>
                 </li>
                 <li>
                     <a href="Busqueda.html">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <p>Busqueda</p></a>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Busqueda</p>
+                    </a>
                 </li>
             </ul>
         </nav>
     </div>
     <main>
-        <aside>
+        <i class="fa-solid fa-bars" id="open-aside"></i>
+        <aside id="my-aside">
+            <i class="fa-solid fa-xmark" id="close-aside"></i>
             <h1>Categorias</h1>
             <div class="categorias">
                 <input type="checkbox" name="laptops" id="laptops" checked>
@@ -67,87 +73,132 @@
             </div>
             <h1>Marcas</h1>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos" checked>
+                <input type="checkbox" name="laptos" id="dell" checked>
                 <label for="laptos">Dell</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="lenovo">
                 <label for="laptos">Lenovo</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="acer">
                 <label for="laptos">Acer</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="hp">
                 <label for="laptos">Hp</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="toshiba">
                 <label for="laptos">Toshiba</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="asus">
                 <label for="laptos">Asus</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="samsung">
                 <label for="laptos">Samsung</label>
             </div>
             <div class="marcas">
-                <input type="checkbox" name="laptos" id="laptos">
+                <input type="checkbox" name="laptos" id="sony">
                 <label for="laptos">Sony</label>
             </div>
         </aside>
-        <div class="contenido">
-            <div class="laptops" draggable="true">
-                <img src="../img/laptop-dell1.avif" alt="">
-                Laptop1
+        <!-- dells -->
+        <div class="contenidoDell" id="contenidoDell">
+            <center><h1>Dells</h1></center><br>
+            <div class="laptops-dell">
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell1.png" alt="">
+                    Lap_Dell1
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell2.png" alt="">
+                    Lap_Dell2
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell3.png" alt="">
+                    Lap_Dell3
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell4.png" alt="">
+                    Lap_Dell4
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell5.png" alt="">
+                    Lap_Dell5
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell6.png" alt="">
+                    Lap_Dell6
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell7.png" alt="">
+                    Lap_Dell7
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell8.png" alt="">
+                    Lap_Dell8
+                </div>
             </div>
-            <div class="laptops" draggable="true">
-                <img src="../img/dell2.avif" alt="">
-                Laptop2
-            </div>
-            <div class="laptops" draggable="true">
-                <img src="../img/dell3.avif" alt="">
-                Laptop3
-            </div>
-            <div class="laptops" draggable="true">
-                <img src="../img/dell4.avif" alt="">
-                Laptop4
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop5
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop6
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop7
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop8
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop9
-            </div>
-            <div class="laptops" draggable="true">
-                <i class="fa-solid fa-laptop-code"></i>
-                Laptop10
+        </div>
+        <!-- lenovo -->
+        <div class="contenidoLenovo" id="contenidoLenovo">
+            <center><h1>Lenovos</h1></center><br>
+            <div class="laptops-dell">
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell1.png" alt="">
+                    Lenovo1
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell2.png" alt="">
+                    Lenovo2
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell3.png" alt="">
+                    Lenovo3
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell4.png" alt="">
+                    Lenovo4
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell5.png" alt="">
+                    Lenovo5
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell6.png" alt="">
+                    Lenovo6
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell7.png" alt="">
+                    Lenovo7
+                </div>
+                <div class="laptops" draggable="true">
+                    <img src="../../img/dell8.png" alt="">
+                    Lenovo8
+                </div>
             </div>
         </div>
     </main>
-    <div class="btn-car" id="whatsapp-button" ondrop="handleDrop(event)">
-        <i class="fa-solid fa-cart-arrow-down"></i>
-    </div>
-    <div id="contenedor-arrastre" style="display: none;"></div>
     <script src="../js/active.js"></script>
-    <script src="../src/js/Drag-Drop.js"></script>
+    <script src="../js/chkbox.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const openButton = document.getElementById("open-aside");
+            const closeButton = document.getElementById("close-aside");
+            const aside = document.getElementById("my-aside");
+          
+            openButton.addEventListener("click", function () {
+              aside.classList.add("open");
+            });
+          
+            closeButton.addEventListener("click", function () {
+              aside.classList.remove("open");
+            });
+          });
+          
+    </script>
 </body>
-
 </html>
