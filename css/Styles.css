@@ -1,4 +1,5 @@
-@import url(World.css);
+@import url(world.css);
+
 .slider {
     width: 100%;
     overflow: hidden;
@@ -198,7 +199,7 @@ main .servicios{
     display: flex;
     align-items: center;
     padding: 20px;
-    box-shadow: 1px 1px 20px 1px;
+    box-shadow: 0 0 2px 0;
     border-radius: 10px;
     width: 50%;
     margin: 0 auto;
@@ -215,7 +216,8 @@ main .servicios{
     }
 }
 .formulario form:hover{
-    border-radius: 200px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0;
 }
 form label{
     margin: 0 auto;

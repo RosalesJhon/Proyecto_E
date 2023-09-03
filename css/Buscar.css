@@ -1,0 +1,72 @@
+@import url(world.css);
+
+.main{
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 14% auto;
+}
+.buscador{
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px 0  rgba(0, 0, 0, 0.339);
+    border-radius: 40px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscador input[type="search"]{
+    width: 90%;
+    left: 0px;
+    padding: 10px;
+    border: none;
+}
+@media (max-width:420px){
+    .main{
+        margin: 14vh auto;
+    }
+    .main h1{
+        font-size: 25px;
+        margin-top: 25px;
+    }
+    .buscador{
+        width: 90%;
+    }
+    .buscador input[type="search"]{
+        width: 80%;
+    }
+}
+.buscador .fa-magnifying-glass{
+    height: 100%;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 25px;
+    color: black;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+.resultados{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.resultados .resultado1{
+    width: 30%;
+    margin: 10px;
+    height: 30vh;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 5px;
+    background: white;
+}
+@media (max-width:420px){
+    .resultados .resultado1{
+        width: 25%;
+        height: 15vh;
+    }
+}

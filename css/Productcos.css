@@ -37,7 +37,7 @@ aside h1{
 .fa-bars{
     display: none;
     width: 30px;
-    margin: 5px;
+    margin: 10px;
     cursor: pointer;
     font-size: 20px;
 }
@@ -48,15 +48,12 @@ aside h1{
     margin-top: 10px;
     color: rgb(0, 0, 0);
     display: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #my-aside.open {
     display: block;
 }
 @media (max-width:420px){
-    .fa-bars{
+    .fa-bars,.fa-xmark{
         display: block;
     }
 }
@@ -71,20 +68,20 @@ aside .categorias,aside .marcas{
     text-align: center;
     margin: 10px auto;
 }
-.contenidoDell,.contenidoLenovo {
+.contenidoDell,.contenidoLenovo,.contenidoAcer {
     width: 85%;
     margin: -11px 15% 0;
 }
 @media (max-width:420px){
-    .contenidoDell,.contenidoLenovo{
+    .contenidoDell,.contenidoLenovo,.contenidoAcer{
         width: 100%;
         margin: 0;
     }
 }
-.contenidoLenovo{
+.contenidoLenovo,.contenidoAcer{
     display: none;
 }
-.contenidoDell .laptops-dell,.contenidoLenovo .laptops-dell{
+.contenidoDell .laptops-dell,.contenidoLenovo .laptops-dell,.contenidoAcer .laptops-dell{
     display: flex;
     padding: 1px;
     flex-wrap: wrap;
@@ -97,10 +94,15 @@ aside .categorias,aside .marcas{
     margin: 20px 5px;
     box-shadow: 0px 0px 2px 0px;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
 }
 .laptops img{
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 180px;
+    object-fit: cover;
 }
 @media (max-width:420px){
     .laptops-dell .laptops{
@@ -110,5 +112,52 @@ aside .categorias,aside .marcas{
     .laptops img{
         width: 150px;
         height: 150px;
+    }
+}
+.ops{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    margin-top: 2vh;
+    text-align: left;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.ops .fa-heart,.fa-bookmark,.fa-cart-shopping{
+    font-size: 20PX;
+    cursor: pointer;
+    
+}
+.fa-heart:hover{
+    color: rgba(255, 0, 0, 0.525);
+}
+.fa-heart.active {
+    color: rgb(255, 0, 0);
+    animation:  tun 2s ease-in-out;
+}
+@keyframes tun{
+    0%{
+        transform: scale(0.5);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1.0);
+    }
+}
+.fa-bookmark:hover{
+    color: rgb(82, 86, 86);
+}
+.fa-bookmark.active{
+    color: rgb(185, 179, 179);
+    animation: gr 2s ease-in-out;
+}
+@keyframes gr{
+    10%{
+        transform: rotate(10deg);
+    }50%{
+        transform: rotate(-10deg);
+    }100%{
+        transform: rotate(0deg);
     }
 }
