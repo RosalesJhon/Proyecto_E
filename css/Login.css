@@ -121,7 +121,7 @@ h6 span {
 	-webkit-transform-style: preserve-3d;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
 
 	.card-front,
 	.card-back {
@@ -243,19 +243,21 @@ body:before {
 	mask: url(../img/bg-circuito.svg);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
+
 	body:before,
-.login__circuit {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	top: 50%;
-	left: 40%;
-	transform: translate(-50%, -50%);
-	display: block;
-	width: 400px;
-	height: 600px;
-}
+	.login__circuit {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		display: block;
+		width: 400px;
+		height: 600px;
+	}
+
 	body:before {
 		background: url(../img/CirMob.svg);
 	}

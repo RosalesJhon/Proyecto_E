@@ -8,9 +8,9 @@ main{
     margin: 15% auto;
     display: grid;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     main{
-        margin: 16vh auto;
+        margin: 20vh auto;
     }
 }
 aside{
@@ -24,14 +24,15 @@ aside{
 aside h1{
     margin: 45px auto;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     aside{
         width: 40%;
         background: white;
         display: none;
+        margin: 0;
     }
     aside h1{
-        margin-top: 50px;
+        margin-top: 25px;
     }
 }
 .fa-bars{
@@ -44,15 +45,15 @@ aside h1{
 .fa-xmark{
     font-size: 30px;
     position: absolute;
-    right: 0px;
-    margin-top: 10px;
+    right: 5px;
+    margin-top: 5px;
     color: rgb(0, 0, 0);
     display: none;
 }
 #my-aside.open {
     display: block;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     .fa-bars,.fa-xmark{
         display: block;
     }
@@ -64,24 +65,23 @@ aside .categorias,aside .marcas{
     justify-content: left;
     align-items: center;
 }
-.contenidoDell h1, .contenidoLenovo h1 {
-    text-align: center;
-    margin: 10px auto;
+.contenidoDell h1,.contenidoLenovo h1,.contenidoAcer h1 ,.contenidoHp h1{
+    margin: -10px;
 }
-.contenidoDell,.contenidoLenovo,.contenidoAcer {
+.contenidoDell,.contenidoLenovo,.contenidoAcer ,.contenidoHp{
     width: 85%;
     margin: -11px 15% 0;
 }
-@media (max-width:420px){
-    .contenidoDell,.contenidoLenovo,.contenidoAcer{
+@media (max-width:450px){
+    .contenidoDell,.contenidoLenovo,.contenidoAcer,.contenidoHp{
         width: 100%;
         margin: 0;
     }
 }
-.contenidoLenovo,.contenidoAcer{
+.contenidoLenovo,.contenidoAcer,.contenidoHp{
     display: none;
 }
-.contenidoDell .laptops-dell,.contenidoLenovo .laptops-dell,.contenidoAcer .laptops-dell{
+.contenidoDell .laptops-dell,.contenidoLenovo .laptops-dell,.contenidoAcer .laptops-dell,.contenidoHp .laptops-dell{
     display: flex;
     padding: 1px;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@ aside .categorias,aside .marcas{
     height: 180px;
     object-fit: cover;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     .laptops-dell .laptops{
         width: 40%;
         height: 20vh;
@@ -128,6 +128,15 @@ aside .categorias,aside .marcas{
     font-size: 20PX;
     cursor: pointer;
     
+}
+@media (max-width:450px){
+    .ops{
+        height: auto;
+        margin-top: -2rem;
+    }
+    .ops .fa-heart,.fa-bookmark,.fa-cart-shopping{
+        font-size: 15px;
+    }
 }
 .fa-heart:hover{
     color: rgba(255, 0, 0, 0.525);

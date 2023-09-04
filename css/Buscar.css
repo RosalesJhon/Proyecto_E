@@ -23,9 +23,9 @@
     padding: 10px;
     border: none;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     .main{
-        margin: 14vh auto;
+        margin: 20vh auto;
     }
     .main h1{
         font-size: 25px;
@@ -64,9 +64,9 @@ input[type="search"]:focus {
     border-radius: 5px;
     background: white;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     .resultados .resultado1{
-        width: 25%;
+        width: 40%;
         height: 15vh;
     }
 }

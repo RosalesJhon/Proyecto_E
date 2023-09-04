@@ -117,7 +117,7 @@
     border: rgba(0, 0, 255, 0.357) solid .5px;
     cursor: pointer;
 }
-@media (max-width:420px) {
+@media (max-width:450px) {
     .main {
         margin-top: 40%;
         width: 100%;
@@ -127,10 +127,12 @@
     }
     .estado2 {
         display: block;
+        height: 15vh;
+        width: 45%;
     }
     .estado2 .sg {
         color: rgb(255, 255, 255);
-        margin-top: 45px;
+        margin-top: 30px;
         font-weight: 500;
         font-size: 15px
     }
@@ -152,7 +154,7 @@
     }
     .contenido .pasos{
         width: 90%;
-        height: 30vh;
+        height: auto;
         margin: 10px auto;
         flex-direction: row;
     }
@@ -238,7 +240,7 @@
     margin: 4rem auto;
     text-align: left;
 }
-@media (max-width:420px){
+@media (max-width:450px){
     .recomendaciones{
         width: 100%;
         background-size: cover;
