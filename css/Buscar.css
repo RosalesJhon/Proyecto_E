@@ -57,7 +57,7 @@ input[type="search"]:focus {
     flex-wrap: wrap;
 }
 .resultados .resultado1{
-    width: 30%;
+    width: 20%;
     margin: 10px;
     height: 30vh;
     box-shadow: 0px 0px 5px 0px;

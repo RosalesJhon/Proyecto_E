@@ -95,13 +95,13 @@ main .servicios{
 .servicios .card{
     width: 70%;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.12);
+    background: rgb(238, 238, 240);
     height: auto;
     margin: 15px;
 }
 @media (max-width:450px) {
     .servicios .card{
-        width: 90%;
+        width: 80%;
         margin: 1rem auto;
         height: auto;
         background: white;
@@ -112,7 +112,7 @@ main .servicios{
     }
 }
 .servicios .card:hover{
-    box-shadow: 0 0 10px 0;
+    box-shadow: 0 0 5px 0;
 }
 .card h3{
     text-align: center;

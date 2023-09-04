@@ -65,9 +65,6 @@ aside .categorias,aside .marcas{
     justify-content: left;
     align-items: center;
 }
-.contenidoDell h1,.contenidoLenovo h1,.contenidoAcer h1 ,.contenidoHp h1{
-    margin: -10px;
-}
 .contenidoDell,.contenidoLenovo,.contenidoAcer ,.contenidoHp{
     width: 85%;
     margin: -11px 15% 0;
