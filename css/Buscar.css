@@ -4,12 +4,11 @@
     float: left;
     text-align: center;
     width: 100%;
-    height: auto;
-    margin: 14% auto;
+    margin: 15% auto;
 }
 .buscador{
     width: 40%;
-    margin: 0 auto;
+    margin: 5% auto;
     box-shadow: 0 10px 20px 0  rgba(0, 0, 0, 0.339);
     border-radius: 40px;
     padding: 1px;
@@ -53,6 +52,7 @@ input[type="search"]:focus {
     height: auto;
     margin: 50px auto;
     display: flex;
+    cursor: pointer;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }

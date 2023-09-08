@@ -100,8 +100,11 @@ main .servicios{
     margin: 15px;
 }
 @media (max-width:450px) {
+    .servicios{
+        flex-wrap: wrap;
+    }
     .servicios .card{
-        width: 80%;
+        width: 90%;
         margin: 1rem auto;
         height: auto;
         background: white;
@@ -155,6 +158,13 @@ main .servicios{
     width: 50%;
 }
 @media (max-width:450px) {
+    .card button{
+        background: rgba(0, 0, 255, 0.612);
+        color: white;
+        width: 60%;
+        margin: 2rem 20%;
+        border-radius: 5px;
+    }
     .contenedor-mapa{
         width: 100%;
         gap: 0;
@@ -173,7 +183,7 @@ main .servicios{
     animation: mov 2s infinite;
     color: red;
 }
-@media (max-width:420px) {
+@media (max-width:450px) {
     .info{
         width: 100%;
         text-align: center;
